@@ -13,6 +13,7 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<freeshuttle.version>0.0.1-SNAPSHOT</freeshuttle.version>
 		<mybatis.version>3.4.5</mybatis.version>
 		<mybatis-spring.version>1.3.1</mybatis-spring.version>
 		<spring-boot.version>1.5.9.RELEASE</spring-boot.version>
@@ -25,6 +26,7 @@
 
 	<dependencyManagement>
 		<dependencies>
+			<!-- mybatis -->
 			<dependency>
 				<groupId>org.mybatis</groupId>
 				<artifactId>mybatis</artifactId>
@@ -61,6 +63,18 @@
 				<version>${spring-boot.version}</version>
 				<type>pom</type>
 				<scope>import</scope>
+			</dependency>
+
+			<!-- freeshuttle -->
+			<dependency>
+				<groupId>cn.nanhuaren.freeshuttle</groupId>
+				<artifactId>freeshuttle-dal</artifactId>
+				<version>${freeshuttle.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>cn.nanhuaren.freeshuttle</groupId>
+				<artifactId>freeshuttle-api</artifactId>
+				<version>${freeshuttle.version}</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>

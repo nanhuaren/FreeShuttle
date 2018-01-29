@@ -22,7 +22,9 @@ import org.mybatis.spring.boot.test.autoconfigure.MybatisTest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Import;
 import org.springframework.test.context.junit4.SpringRunner;
-import sample.mybatis.domain.City;
+
+import cn.nanhuaren.freeshuttle.dal.dao.CityDao;
+import cn.nanhuaren.freeshuttle.dal.domain.City;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

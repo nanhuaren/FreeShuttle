@@ -20,7 +20,9 @@ import org.junit.runner.RunWith;
 import org.mybatis.spring.boot.test.autoconfigure.MybatisTest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.junit4.SpringRunner;
-import sample.mybatis.domain.Hotel;
+
+import cn.nanhuaren.freeshuttle.dal.domain.Hotel;
+import cn.nanhuaren.freeshuttle.dal.mapper.HotelMapper;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
