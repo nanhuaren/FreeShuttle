@@ -57,7 +57,7 @@ Page({
         store_name: currentStore.name
       }
       wx.request({
-        url: 'http://www.nanhuaren.com/data/province/city/store/shuttle/' + storeNo + '.json', //获取门店
+        url: 'https://www.nanhuaren.cn/data/province/city/store/shuttle/' + storeNo + '.json', //获取门店
         data: {
         },
         header: {
@@ -139,20 +139,20 @@ Page({
     })
     wx.setStorageSync('currentLine', currentLine)
     wx.navigateTo({
-      url: 'detail/index?lineNo=' + shuttle
+      url: '/pages/line/detail/index?lineNo=' + shuttle
     })
   },
 
   //省市切换
   bindChooseProvinceTap: function (event) {
     wx.navigateTo({
-      url: '../province/list'
+      url: '/pages/province/list'
     })
   },
   //门店切换
   bindChooseStoreTap: function (event) {
     wx.navigateTo({
-      url: '../province/city/store/list'
+      url: '/pages/province/city/store/list'
     })
   },
 })

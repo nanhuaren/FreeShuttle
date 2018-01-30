@@ -20,7 +20,7 @@ Page({
     var provinceNo = currentProvince.province_no
     var cityNo = currentCity.city_no
     wx.request({
-      url: 'http://www.nanhuaren.com/data/province/city/store/' + provinceNo + '_' + cityNo+'.json', //获取门店
+      url: 'https://www.nanhuaren.cn/data/province/city/store/' + provinceNo + '_' + cityNo+'.json', //获取门店
       data: {
       },
       header: {
@@ -94,7 +94,7 @@ Page({
     })
     wx.setStorageSync('currentStore', currentStore)
     wx.navigateTo({
-      url: '../../../line/index?storeNo=' + store
+      url: '/pages/line/index?storeNo=' + store
     })
   },
 })

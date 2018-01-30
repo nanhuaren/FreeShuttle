@@ -32,7 +32,7 @@ Page({
       }
     }
     wx.request({
-      url: 'http://www.nanhuaren.com/data/province/list.json', //获取所有省份
+      url: 'https://www.nanhuaren.cn/data/province/list.json', //获取所有省份
       data: {
       },
       header: {
@@ -106,7 +106,7 @@ Page({
   bindChooseCityTap: function (event) {
     var province = event.currentTarget.dataset.province
     wx.request({
-      url: 'http://www.nanhuaren.com/data/province/city/' + province+'.json', //获取所有省份
+      url: 'https://www.nanhuaren.cn/data/province/city/' + province+'.json', //获取所有省份
       data: {
       },
       header: {

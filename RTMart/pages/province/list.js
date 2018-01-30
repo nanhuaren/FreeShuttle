@@ -15,7 +15,7 @@ Page({
    */
   onLoad: function (options) {
     wx.request({
-      url: 'http://www.nanhuaren.com/data/province/list.json', //获取所有省份
+      url: 'https://www.nanhuaren.cn/data/province/list.json', //获取所有省份
       data: {
       },
       header: {
@@ -90,7 +90,7 @@ Page({
     wx.setStorageSync('currentProvince', currentProvince)
 
     wx.navigateTo({
-      url: '../province/city/list?provinceNo=' + province
+      url: '/pages/province/city/list?provinceNo=' + province
     })
   },
 })

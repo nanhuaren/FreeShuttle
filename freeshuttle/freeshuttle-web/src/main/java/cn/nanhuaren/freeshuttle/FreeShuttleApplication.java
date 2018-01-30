@@ -8,9 +8,6 @@ import org.springframework.web.cors.CorsConfiguration;
 import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 import org.springframework.web.filter.CorsFilter;
 
-import cn.nanhuaren.freeshuttle.dal.dao.CityDao;
-import cn.nanhuaren.freeshuttle.dal.mapper.HotelMapper;
-
 @SpringBootApplication
 public class FreeShuttleApplication implements CommandLineRunner {
 
@@ -18,19 +15,11 @@ public class FreeShuttleApplication implements CommandLineRunner {
 		SpringApplication.run(FreeShuttleApplication.class, args);
 	}
 
-	private final CityDao cityDao;
-
-	private final HotelMapper hotelMapper;
-
-	public FreeShuttleApplication(CityDao cityDao, HotelMapper hotelMapper) {
-		this.cityDao = cityDao;
-		this.hotelMapper = hotelMapper;
+	public FreeShuttleApplication() {
 	}
 
 	@Override
 	public void run(String... args) throws Exception {
-		System.out.println(this.cityDao.selectCityById(1));
-		System.out.println(this.hotelMapper.selectByCityId(1));
 	}
 	
 	@Bean
